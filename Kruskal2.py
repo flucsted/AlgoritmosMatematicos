@@ -3,7 +3,6 @@ from turtle import color
 import networkx as nx
 import numpy as np
 import matplotlib.pyplot as plt
-import random
 
 tamagraf=int(input("Ingrese la cantidad de nodos que componen al grafo: "))
 
@@ -148,13 +147,6 @@ while conta1<tamagraf-1:
         vecarb=np.array(listarb)
         vecpes=np.array(listpes)
         conta1+=1
-        #elif((node1 in vecarb)==True and (node2 in vecarb)==True):
-        #    listarb.append(node1)
-        #    listarb.append(node2)
-        #    listpes.append(min)
-        #    vecarb=np.array(listarb)
-        #    vecpes=np.array(listpes)
-        #    conta1+=1
     elif(conta1==0):
         listarb.append(node1)
         listarb.append(node2)
@@ -183,10 +175,6 @@ while conta1<tamagraf-1:
             contarep+=1    
         c+=2
     vecrep=np.array(listarbrep)
-
-print(vecpes)
-print(vecarb)
-print(vecrep)
 
 #Creación del grafo mínimo
 F=nx.Graph()
